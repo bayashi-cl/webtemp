@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = {extras = ["all"], version = "*"}
+
+[dev-packages]
+mypy = "*"
+ruff = "*"
+black = "*"
+isort = "*"
+pytest = "*"
+autoflake = "*"
+
+[requires]
+python_version = "3.9"
+python_full_version = "3.9.16"
+
+[scripts]
+start = "bash -x scripts/start.sh"
+test = "bash -x scripts/test.sh"
+format = "bash -x scripts/format.sh"
+lint = "bash -x scripts/lint.sh"

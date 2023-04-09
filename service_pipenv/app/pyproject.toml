@@ -1,0 +1,6 @@
+# linter, formatter等の設定
+
+[tool.autoflake]
+in-place = true
+recursive = true
+imports = ["fastapi"]
